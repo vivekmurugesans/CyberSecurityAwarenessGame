@@ -46,7 +46,7 @@ function Home() {
                 <li key={index}>
                   <Link 
                     to={item.path}
-                    className="block w-full text-xl px-8 py-3 rounded-lg bg-cyan-600/20 hover:bg-cyan-500/30 text-cyan-300 
+                    className=" w-full text-xl px-8 py-3 rounded-lg bg-cyan-600/20 hover:bg-cyan-500/30 text-cyan-300 
                     transition-all duration-300 border border-cyan-500/30 hover:border-cyan-400/50 
                     hover:shadow-lg hover:shadow-cyan-500/20 text-center flex items-center justify-center gap-2"
                     style={{ textShadow: '0 0 10px rgba(6, 182, 212, 0.3)' }}
@@ -67,7 +67,7 @@ function Home() {
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="min-h-screen bg-[#0B0F19] relative overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-40"
